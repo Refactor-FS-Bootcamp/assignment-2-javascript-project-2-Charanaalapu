@@ -5,7 +5,7 @@ const number=document.querySelector("#number")
 const bookBtn=document.querySelector("#Book-btn")
 // console.log(nameOfPerson,dateOfBoooking,timeOfBooking,number,bookBtn)
 var x = localStorage.length;
-if(x==0){
+if(x==0 || x>=1){
     localStorage.setItem('Bookings','')
 }
     
