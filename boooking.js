@@ -1,9 +1,8 @@
 if('Bookings' in localStorage){
-    //    console.log("Key :'Bookings' is Present")
-    }else{
-        localStorage.setItem('Bookings','')
-    
-    }
+    //console.log("Key :'Bookings' is Present")
+}else{
+    localStorage.setItem('Bookings','')
+}
 const nameOfPerson=document.querySelector("#name")
 const dateOfBoooking=document.querySelector("#date")
 const timeOfBooking=document.querySelector("#time")
