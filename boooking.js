@@ -1,15 +1,15 @@
+if('Bookings' in localStorage){
+    //    console.log("Key :'Bookings' is Present")
+    }else{
+        localStorage.setItem('Bookings','')
+    
+    }
 const nameOfPerson=document.querySelector("#name")
 const dateOfBoooking=document.querySelector("#date")
 const timeOfBooking=document.querySelector("#time")
 const number=document.querySelector("#number")
 const bookBtn=document.querySelector("#Book-btn")
-// console.log(nameOfPerson,dateOfBoooking,timeOfBooking,number,bookBtn)
-var x = localStorage.length;
-if(x==0 || x>=1){
-    localStorage.setItem('Bookings','')
-}
-    
-console.log(x)
+
 bookBtn.addEventListener('click',function(event){
     event.preventDefault()
     if(nameOfPerson.value=='' || dateOfBoooking.value=='' || timeOfBooking.value=='' || number.value==''){
